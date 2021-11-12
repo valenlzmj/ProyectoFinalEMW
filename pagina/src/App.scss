@@ -6,3 +6,15 @@
 	align-items: $align;
 	flex-direction: $direction;
 }
+
+@font-face {
+	font-family: 'HanginCaps';
+	src: url('./fonts/HanginCapsThin-Thin.ttf');
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'BarlowCondensed';
+	src: url('./fonts/BarlowCondensed-Light.otf');
+	font-style: normal;
+}
