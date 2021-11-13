@@ -16,8 +16,8 @@ import Home from './pages/Home';
 function App() {
   return (
     <Router>
-		<div className="app-container">
 			<Header />
+			<div className="app-container">
 			<Switch>
 				<Route path="/descripcion-del-juego" component={Description} />
 				<Route path="/experiencia-del-juego" component={Experience} />
@@ -25,7 +25,7 @@ function App() {
 				<Route path="/equipo-de-trabajo" component={Team} />
 				<Route path="/" component={Home} />
 			</Switch>
-		</div>
+			</div>
 	</Router>
   );
 }

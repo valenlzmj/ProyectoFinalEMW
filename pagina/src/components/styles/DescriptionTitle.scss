@@ -10,14 +10,27 @@
         background-size: cover;
         @include media('<=tablet') {
             height: 200px;
-            overflow: hidden;
+            overflow-x: hidden;
+        }
+        @include media('<=surface') {
+            height: 100px;
+            overflow-x: hidden;
+        }
+        @include media('<=fold') {
+            overflow-x: hidden;
         }
         h1{
             font-size: 4em;
             font-weight: 100;
             text-align: center;
             @include media('<=tablet') {
-                font-size: 3em;
+                
+            }
+            @include media('<=surface') {
+                font-size: 1.5em;
+            }
+            @include media('<=fold') {
+                font-size: 1.2em;
             }
         }
     }
@@ -31,6 +44,13 @@
             max-width: 50em;
             font-size: 1.5em;
             padding: 6em;
+            @include media('<=surface') {
+                font-size: 1em;
+                padding: 4em;
+            }
+            @include media('<=fold') {
+                padding: 4em;
+            }
         }
     }
 }
