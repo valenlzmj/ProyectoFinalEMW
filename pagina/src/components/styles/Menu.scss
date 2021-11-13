@@ -1,2 +1,17 @@
 @import '../../App.scss';
 
+.container{
+    .navigation{
+        ul{
+            height: 100%;
+		    list-style: none;
+            li{
+                cursor: pointer;
+                span {
+                    margin: 0 5px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
