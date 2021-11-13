@@ -1,10 +1,14 @@
 import React from 'react';
 import './styles/Menu.scss';
+import { AiFillHome} from 'react-icons/ai';
+import { HiDocumentText, HiCode } from "react-icons/hi";
+import { IoGameController} from "react-icons/io5";
+import { BsFillPeopleFill, BsFillMoonFill } from "react-icons/bs";
 
 const Menu = () => {
     return (
         <div className="container">
-            <div className="navgation">
+            <div className="navigation">
                 <ul>
                     <li>
                         <a href="#">
