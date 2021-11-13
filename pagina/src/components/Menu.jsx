@@ -11,16 +11,15 @@ const Menu = () => {
     const abrir = () => {
         let btn = document.querySelector("#btn");
         let sidebar = document.querySelector(".navigation");
-        btn.onclick = function(){
-            sidebar.classList.toggle("active");
-        }
+        sidebar.classList.toggle("active");
+        
     }
 
     return (
         <div className="container">
             <div className="navigation">
                 <div className="logo">
-                    <HiMenu className="fontStyle" id="btn" />
+                    <HiMenu className="fontStyle" id="btn" onClick={abrir} />
                 </div>
                 <ul>
                     <li>
