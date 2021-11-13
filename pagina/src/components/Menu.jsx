@@ -6,61 +6,71 @@ import { HiDocumentText, HiCode, HiMenu } from "react-icons/hi";
 import { IoGameController } from "react-icons/io5";
 import { BsFillPeopleFill, BsFillMoonFill } from "react-icons/bs";
 
+import Home from '../pages/Home';
+
 const Menu = () => {
+
+    const location = useLocation(); // Url
+    const headerRef = useRef(null);
+    const [activeWindow, setActiveWindow] = useState(location.pathname); // Url pathname
+    useEffect(() => {
+        setActiveWindow(location.pathname);
+
+    }, [location]);
 
     const abrir = () => {
         let btn = document.querySelector("#btn");
         let sidebar = document.querySelector(".navigation");
         sidebar.classList.toggle("active");
-        
+
     }
 
     return (
-        <div className="container">
-            <div className="navigation">
+        <header className="container" ref={headerRef}>
+            <nav className="navigation">
                 <div className="logo">
                     <HiMenu className="fontStyle" id="btn" onClick={abrir} />
                 </div>
                 <ul>
                     <li>
-                        <a href="#">
+                        <Link className={activeWindow === "/" ? "active" : "null"} to="/">
                             <span className="icon"><AiFillHome className="fontStyle" /></span>
                             <span className="title">Inicio</span>
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#">
+                        <Link className={activeWindow === "/descripcion-del-juego" ? "active" : "null"} to="/descripcion-del-juego">
                             <span className="icon"><HiDocumentText className="fontStyle" /></span>
                             <span className="title">Descripción del Juego</span>
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#">
+                        <Link className={activeWindow === "/experiencia-del-juego" ? "active" : "null"} to="/experiencia-del-juego">
                             <span className="icon"><IoGameController className="fontStyle" /></span>
                             <span className="title">Experiencia del Juego</span>
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#">
+                        <Link className={activeWindow === "/desarrollo-del-juego" ? "active" : "null"} to="/desarrollo-del-juego">
                             <span className="icon"><HiCode className="fontStyle" /></span>
                             <span className="title">Desarrollo del Juego</span>
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#">
+                        <Link className={activeWindow === "/equipo-de-trabajo" ? "active" : "null"} to="/equipo-de-trabajo">
                             <span className="icon"><BsFillPeopleFill className="fontStyle" /></span>
                             <span className="title">Equipo de Trabajo</span>
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#">
+                        <a>
                             <span className="icon"><BsFillMoonFill className="fontStyle" /></span>
                             <span className="title">Modo Oscuro</span>
                         </a>
                     </li>
                 </ul>
-            </div>
-        </div>
+            </nav>
+        </header>
     )
 }
 
