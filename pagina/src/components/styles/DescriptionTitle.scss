@@ -1,0 +1,36 @@
+@import '../../App.scss';
+
+.all{
+    .container{
+        @include flex(center, center, row);
+        background: url('../../images/FondoTitulo.jpg');
+        width: 100%;
+        height: 150px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @include media('<=tablet') {
+            height: 200px;
+            overflow: hidden;
+        }
+        h1{
+            font-size: 4em;
+            font-weight: 100;
+            text-align: center;
+            @include media('<=tablet') {
+                font-size: 3em;
+            }
+        }
+    }
+    .bg{
+        @include flex(center, center, row);
+        background: #f4f4f4;
+        width: 100%;
+        height: 100%;
+        .history{
+            text-align: justify;
+            max-width: 50em;
+            font-size: 1.5em;
+            padding: 6em;
+        }
+    }
+}
