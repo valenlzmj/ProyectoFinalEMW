@@ -1,9 +1,13 @@
 import React from 'react';
+import ExperienceTitle from '../components/ExperienceTitle';
+import './styles/Experience.scss';
 
 const Experience = () => {
     return(
         <main className="Experience">
-            <h1>EXPERIENCIA DEL JUEGO</h1>
+          <section className="title__section">
+                <ExperienceTitle />
+          </section>  
         </main>
     )
 }
