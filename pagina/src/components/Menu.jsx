@@ -6,7 +6,7 @@ import { HiDocumentText, HiCode, HiMenu } from "react-icons/hi";
 import { IoGameController } from "react-icons/io5";
 import { BsFillPeopleFill, BsFillMoonFill } from "react-icons/bs";
 
-import Home from '../pages/Home';
+
 
 const Menu = () => {
 
@@ -19,7 +19,7 @@ const Menu = () => {
     }, [location]);
 
     const abrir = () => {
-        let btn = document.querySelector("#btn");
+        
         let sidebar = document.querySelector(".navigation");
         sidebar.classList.toggle("active");
 
@@ -63,7 +63,7 @@ const Menu = () => {
                         </Link>
                     </li>
                     <li>
-                        <a>
+                        <a href="#">
                             <span className="icon"><BsFillMoonFill className="fontStyle" /></span>
                             <span className="title">Modo Oscuro</span>
                         </a>

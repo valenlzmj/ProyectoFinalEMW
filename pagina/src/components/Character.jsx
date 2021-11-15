@@ -12,7 +12,7 @@ const Character = () => {
                 <h1>¿QUIÉN ES EL PERSONAJE PRINCIPAL?</h1>
             </div>
             <div className="part">
-                <img src={dog} alt="Natural" />
+                <img src={dog} alt="Dog" />
                 <div className="text">
                     <h3>ÁNGELUS</h3>
                     <p>Él sería el personaje principal, será

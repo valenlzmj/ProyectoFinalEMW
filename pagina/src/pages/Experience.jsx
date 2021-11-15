@@ -1,5 +1,6 @@
 import React from 'react';
 import ExperienceTitle from '../components/ExperienceTitle';
+import Environment from '../components/Environment';
 import './styles/Experience.scss';
 
 const Experience = () => {
@@ -7,7 +8,10 @@ const Experience = () => {
         <main className="Experience">
           <section className="title__section">
                 <ExperienceTitle />
-          </section>  
+          </section> 
+          <section className="environment__section">
+                <Environment />
+          </section> 
         </main>
     )
 }
