@@ -1,0 +1,120 @@
+@import '../../App.scss';
+
+.containerArt{
+    background: #424242;
+    padding: 3em;
+    min-height: 50em;
+    .ArtTitle{
+        width: 100%;
+            height: 150px;
+            margin-bottom: 3em;
+            @include flex(center, center, row);
+            h1{
+                color: white;
+                font-size: 2.5em;
+                font-weight: 100;
+                text-align: center;
+                @include media('<=surface') {
+                    font-size: 1.5em;
+                }
+                @include media('<=fold') {
+                    font-size: 1em;
+                }
+            }
+    }
+    .allCA{
+        @include flex(center, center, row);
+        padding: 1em;
+        width: 100%;
+        position: relative;
+        flex-wrap: wrap;
+        @include keyframes(fade){
+            0% {
+                opacity: 0;
+            }
+            15% {
+                opacity: .15;
+            }
+            25% {
+                opacity: .35;
+            }
+            45% {
+                opacity: .55;
+            }
+            75% {
+                opacity: .85;
+            }
+            100%{
+                opacity: 1;
+            }
+            @include animate(fade, 3s, linear, 3);
+        }
+        @include media('<=surface') {
+            display: inline;
+        }
+    }
+    .Card{
+            max-width: 300px;
+            height: 540px;
+            padding: 20px 15px;
+            margin: 2em;
+            display: flex;
+            flex-direction: column;
+            @include media('<=surface') {
+                max-width: 200px;
+                height: 700px;
+                margin: 3em 0.8em;
+            }
+            @include media('<=phone') {
+                max-width: 200px;
+                height: 800px;
+                margin: 3em 0.8em;
+            }
+            @include media('<=fold') {
+                max-width: 200px;
+                height: 1100px;
+            }
+        .imgBx{
+            position: relative;
+            width: 260px;
+            height: 260px;
+            top: -60px;
+            left: 20px;
+            z-index: 1;
+            @include media('<=surface') {
+                width: 160px;
+                height: 160px;
+                top: -50px;
+                left: 20px;
+            }
+            @include media('<=phone') {
+                width: 130px;
+                height: 130px;
+                top: -50px;
+                left: 13px;
+            }
+            @include media('<=fold') {
+                width: 100px;
+                height: 100px;
+                top: -50px;
+                left: 11px;
+            }
+            img{
+                max-width: 100%;
+            }
+        }
+        .Content{
+            margin-top: -50px;
+            padding: 10px 15px;
+            color: white;
+            h2{
+                text-align: center;
+                font-size: 1.5em;
+            }
+            p{
+                text-align: justify;
+                font-size: 1.2em;
+            }
+        }
+    }
+}

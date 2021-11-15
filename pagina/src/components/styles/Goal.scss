@@ -1,0 +1,53 @@
+@import '../../App.scss';
+
+.containerGoal{
+    padding: 2em;
+    @include keyframes(fade){
+        0% {
+            opacity: 0;
+        }
+        15% {
+            opacity: .15;
+        }
+        25% {
+            opacity: .35;
+        }
+        45% {
+            opacity: .55;
+        }
+        75% {
+            opacity: .85;
+        }
+        100%{
+            opacity: 1;
+        }
+        @include animate(fade, 3s, linear, 3);
+    }
+    .part{
+        @include flex(center, center, row);
+        img{
+            width: 200px;
+            padding: 3em;
+            @include media('<=tablet') {
+                width: 130px;
+                padding: 2em;
+            }
+            @include media('<=surface') {
+                width: 80px;
+            }
+        }
+        .text{
+            text-align: justify;
+            max-width: 20em;
+            font-size: 1.5em;
+            @include media('<=tablet') {
+                text-align: left;
+                font-size: 1.5em;
+                margin-bottom: 2em;
+            }
+            @include media('<=surface') {
+                font-size: 1em;
+            }
+        }
+    }
+}

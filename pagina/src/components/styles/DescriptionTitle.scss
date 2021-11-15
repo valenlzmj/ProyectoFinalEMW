@@ -30,7 +30,8 @@
                 font-size: 1.5em;
             }
             @include media('<=fold') {
-                font-size: 1.2em;
+                font-size: 1em;
+                padding: 0 4em;
             }
         }
     }
