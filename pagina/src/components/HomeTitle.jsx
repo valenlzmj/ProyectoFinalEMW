@@ -10,7 +10,7 @@ const HomeTitle = () => {
                                    
             </div>
             <div className="bg">
-            <div className="history">
+            <div className="datos" id="animation">
              <p>Documentación de videojuego</p>  
             <h2>¿Qué es Ángelus?</h2>
                 <p>Ángelus será un videojuego con
@@ -18,8 +18,7 @@ const HomeTitle = () => {
                     móviles con sistemas Android</b>,
                     teniendo como público objetivo a las
                     personas entre 14 y 21 años, pero
-                    conteniendo material idóneo para
-                    <b>edades de 10 y más años</b>.
+                    conteniendo material idóneo para <b>edades de 10 y más años</b>.
                     Además de eso, este videojuego será
                     para un <b>solo jugador,</b> y su
                     género principal será <b>Puzle</b>.</p>
