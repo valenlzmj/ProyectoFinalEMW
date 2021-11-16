@@ -35,12 +35,31 @@ const Menu = () => {
         }
     }
 
+    const animationD = () => {
+        let animation = document.getElementById('animation');
+        let position = animation.getBoundingClientRect().top;
+        let size = window.innerHeight;
+
+        if(position < size){
+            animation.style.animation = 'fade 2s ease-out';
+        }
+    }
+
     useEffect(() => {
         if(activeWindow === "/experiencia-del-juego"){
             window.addEventListener('scroll', animationE);
         }
         return () => {
             window.removeEventListener('scroll', animationE);
+        }
+    }, [activeWindow]);
+
+    useEffect(() => {
+        if(activeWindow === "/descripcion-del-juego"){
+            window.addEventListener('scroll', animationD);
+        }
+        return () => {
+            window.removeEventListener('scroll', animationD);
         }
     }, [activeWindow]);
 
