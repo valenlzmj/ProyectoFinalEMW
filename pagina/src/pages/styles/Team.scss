@@ -1,0 +1,36 @@
+@import '../../App.scss';
+
+.containerteam{
+    @include flex(center, center, row);
+    background: url('../../images/FondoTitulo.jpg');
+    width: 100%;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include media('<=tablet') {
+        height: 200px;
+        overflow-x: hidden;
+    }
+    @include media('<=surface') {
+        height: 100px;
+        overflow-x: hidden;
+    }
+    @include media('<=fold') {
+        overflow-x: hidden;
+    }
+    h1{
+        font-size: 4em;
+        font-weight: 100;
+        text-align: center;
+        @include media('<=tablet') {
+            
+        }
+        @include media('<=surface') {
+            font-size: 1.5em;
+        }
+        @include media('<=fold') {
+            font-size: 1em;
+            padding: 0 4em;
+        }
+    }
+}
