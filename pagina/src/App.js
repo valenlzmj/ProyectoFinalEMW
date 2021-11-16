@@ -11,11 +11,12 @@ import Experience from './pages/Experience';
 import Team from './pages/Team';
 import Home from './pages/Home';
 
-
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <Router>
+		<ScrollToTop />
 			<Header />
 			<div className="app-container">
 			<Switch>
