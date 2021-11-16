@@ -9,7 +9,7 @@ import Andres from '../images/andres.png'
 const equipo = () => {
     return (
         <div className="allC">
-            <div className="containerequipo">
+            <div className="containerequipo" id="animation">
             <div className="equipoTitle">
                 <h1>nuestro equipo de trabajo fue seleccionado por sus habilidades tanto en el desarrollo del juego como en la publicidad y estrategias de mercado </h1>
             </div>

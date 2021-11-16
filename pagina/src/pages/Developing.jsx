@@ -6,7 +6,7 @@ const Developing = () => {
     return(
         <main className="Developing" >
             <div className="all">
-            <div className="container">
+            <div className="container" id="animation">
                 <h1>DESEARROLLO DEL JUEGO</h1>
             </div>
             <div className="bg">
