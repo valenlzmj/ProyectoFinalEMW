@@ -1,12 +1,15 @@
 import React from 'react';
-import './styles/Description.scss';
+import HomeTitle from '../components/HomeTitle';
+import './styles/Home.scss';
 
-const Home = () => {
+const AHome = () => {
     return(
       <main className="Home">
-      <h1>INICIO</h1>
+      <section className="title__section">
+                <HomeTitle/>
+          </section>
   </main>
     )
 }
 
-export default Home
+export default AHome
