@@ -1,0 +1,119 @@
+@import '../../App.scss';
+
+.allC{
+    background: #f4f4f4;
+    padding: 3em;
+    min-height: 43em;
+    .containerequipo{
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        .equipoTitle{
+            width: 100%;
+            height: 150px;
+            margin-bottom: 3em;
+            @include flex(center, center, row);
+            h1{
+                font-size: 2.5em;
+                font-weight: 100;
+                text-align: center;
+                @include media('<=surface') {
+                    font-size: 1.5em;
+                }
+                @include media('<=fold') {
+                    font-size: 1em;
+                }
+            }
+        }
+        .Card{
+            max-width: 300px;
+            height: 215px;
+            background: white;
+            margin: 30px 10px;
+            padding: 20px 15px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            transition: 0.3s ease-in-out;
+            border-radius: 20px;
+            @include media('<=surface') {
+                max-width: 200px;
+                height: 115px;
+            }
+            @include media('<=fold') {
+                max-width: 200px;
+                height: 80px;
+            }
+            &:hover{
+                height: 420px;
+                @include media('<=surface') {
+                    height: 320px;
+                }
+                @include media('<=fold') {
+                    height: 390px;
+                }
+                .Content{
+                    visibility: visible;
+                    opacity: 1;
+                    margin-top: -40px;
+                    transition-delay: 0.3s;
+                    height: 420px;
+                @include media('<=surface') {
+                    margin-top: -70px;
+                    height: 320px;
+                }
+                @include media('<=phone') {
+                    margin-top: -80px;
+                    height: 320px;
+                }
+                @include media('<=fold') {
+                    margin-top: -80px;
+                    height: 300px;
+                }
+                }
+            }
+            .imgBx{
+                position: relative;
+                width: 200;
+                height: 200;
+                top: -60px;
+                left: 20px;
+                z-index: 1;
+                @include media('<=surface') {
+                    width: 160px;
+                    height: 160px;
+                    top: -50px;
+                    left: 20px;
+                }
+                @include media('<=phone') {
+                    width: 130px;
+                    height: 130px;
+                    top: -50px;
+                    left: 13px;
+                }
+                @include media('<=fold') {
+                    width: 100px;
+                    height: 100px;
+                    top: -50px;
+                    left: 11px;
+                }
+                img{
+                    max-width: 100%;
+                }
+            }
+            .Content{
+                position: relative;
+                margin-top: -140px;
+                padding: 10px 15px;
+                text-align: center;
+                color: #111;
+                visibility: hidden;
+                opacity: 0;
+                transition: 0.3 ease-in-out;
+            }
+        }
+    }
+}
