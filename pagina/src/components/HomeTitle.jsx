@@ -28,7 +28,7 @@ const HomeTitle = () => {
             <div className="part">
             <img src={dog} alt="Ángelus" />
                 <div className="text">
-                    <h3>Sinopsis</h3>
+                    <h3>SINOPSIS</h3>
                         <p>Ángelus será una exploración surrealista 
                             de tipo rompecabezas, donde el jugador 
                             guiará a un perrito a través de un laberinto 
@@ -40,6 +40,9 @@ const HomeTitle = () => {
                 </div>
             </div>
             </div>
+            
+            
     )
 }
 export default HomeTitle
+
