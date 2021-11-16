@@ -5,19 +5,7 @@ import rulesI from '../images/rules.png'
 import rewardsI from '../images/rewards.png'
 
 const Goal = () => {
-
-    
-        window.addEventListener('scroll', function(){
-            let animation = document.getElementById('animation');
-            let position = animation.getBoundingClientRect().top;
-            let size = window.innerHeight;
-
-            if(position < size){
-                animation.style.animation = 'fade 3s ease-out';
-            }
-        })
-    
-
+  
     return (
         <div className="containerGoal" id="animation">
             <div className="part">

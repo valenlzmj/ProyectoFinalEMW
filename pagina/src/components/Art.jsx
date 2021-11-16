@@ -4,18 +4,35 @@ import img1 from '../images/tetraedro.png'
 import img2 from '../images/cubo.png'
 import img3 from '../images/octaedro.png'
 import img4 from '../images/icosaedro.png'
+//import { useLocation } from 'react-router-dom';
 
 const Art = () => {
+    // const location = useLocation(); // Url
+    // const [activeWindow, setActiveWindow] = useState(location.pathname); // Url pathname
 
-    window.addEventListener('scroll', function(){
-        let animation = document.getElementById('animation');
-        let position = animation.getBoundingClientRect().top;
-        let size = window.innerHeight;
+    // const animationE = () => {
+    //     let animation = document.getElementById('animation');
+    //     let position = animation.getBoundingClientRect().top;
+    //     let size = window.innerHeight;
 
-        if(position < size){
-            animation.style.animation = 'fade 3s ease-out';
-        }
-    })
+    //     if(position < size){
+    //         animation.style.animation = 'fade 3s ease-out';
+    //     }
+    // }
+
+    // useEffect(() => {
+    //     setActiveWindow(location.pathname);
+
+    // }, [location]);
+
+    // useEffect(() => {
+    //     if(activeWindow === "/experiencia-del-juego"){
+    //         window.addEventListener('scroll', animationE);
+    //     }
+    //     return () => {
+    //         window.removeEventListener('scroll', animationE);
+    //     }
+    // }, [activeWindow]);
 
     return (
 
