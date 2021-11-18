@@ -17,11 +17,11 @@
             margin-bottom: 3em;
             @include flex(center, center, row);
             h1{
-                font-size: 2.5em;
+                font-size: 2em;
                 font-weight: 100;
                 text-align: center;
                 @include media('<=surface') {
-                    font-size: 1.5em;
+                    font-size: 1.3em;
                 }
                 @include media('<=fold') {
                     font-size: 1em;
