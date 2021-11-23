@@ -1,0 +1,10 @@
+La página debe contener una sinopsis del videojuego.
+La página debe contener una sección con la historia del videojuego.
+La página debe contener una sección con los objetivos, las reglas y las recompensas del videojuego.
+La página debe contener una sección con la descripción del personaje principal del videojuego.
+La página debe contener una sección con los ambientes que se pueden encontrar dentro del videojuego.
+La página debe contener una sección con el arte conceptual y los niveles del videojuego.
+La página debe contener una sección en la que se expliquen los puzles y coleccionables. 
+La página debe contener una sección donde se muestre el equipo de trabajo.
+La página debe contener una menú que permita al usuario navegar entre las diferentes páginas.
+Cada página debe contener un pie de página que contenga los correos electrónicos del trabajo de equipo. 
